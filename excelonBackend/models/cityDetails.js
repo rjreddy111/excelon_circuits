@@ -79,7 +79,8 @@ router.get("/", async (request, response) => {
          `SELECT count(*) as totalCount FROM city `
 
          const totalCount = await request.app.locals.dbObject.get(getTotatlCount) 
-         totalPages = Math.ceil(totalCount.totalCount/limit)
+         totalPages = Math.floor(totalCount.totalCount/limit)
+         totalPages === 0 ? 1 : totalPages
          console.log(totalPages)
         
         console.log(totalCount)

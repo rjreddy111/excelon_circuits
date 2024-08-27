@@ -3,7 +3,7 @@ POST http://localhost:5001/cityname
 Content-Type: application/json
 
  {
-    "name": "Lucknow",
+    "name": "Mysore",
     "population": 1494000,
     "country": "India",
     "latitude": 67.3618,
@@ -30,11 +30,11 @@ DELETE http://localhost:5001/cityname/null
 
 // update city
 ### 
-PUT http://localhost:5001/cityname/My%20Citys
+PUT http://localhost:5001/cityname/Delhi
 Content-Type: application/json
 
  {
-    "population"  :55000, 
+    "population"  :1055000, 
     "country" : "India", 
     "latitude" : 175.687, 
     "longitude" : 789.23
