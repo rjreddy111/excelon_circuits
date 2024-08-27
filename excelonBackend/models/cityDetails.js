@@ -112,7 +112,7 @@ router.get("/", async (request, response) => {
 router.delete ("/:name", async(request,response) => {
     const {name} = request.params
     console.log(null)
-    const deltedQueery = `DELETE FROM city where name = ${name}` 
+    const deltedQueery = `DELETE FROM city where name = '${name}'` 
     await request.app.locals.dbObject.run(deltedQueery)
     console.log("City deleted successfully")
 } );

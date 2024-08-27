@@ -24,7 +24,7 @@ GET http://localhost:5001/cityname?projection=name,population,country&search=Del
 
 ### 
 
-DELETE http://localhost:5001/cityname/null
+DELETE http://localhost:5001/cityname/Bidar
 
 
 
