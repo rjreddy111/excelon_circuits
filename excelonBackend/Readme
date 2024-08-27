@@ -1,0 +1,25 @@
+### 
+Deployed link : https://excelon-circuits-1.onrender.com/cityname 
+
+
+Installed necessary packages like sqlite3, express
+
+used localhost:5001
+
+###
+
+Commands used to build project
+1. mkdir app-name // excelonBackend 
+
+2. cd excelonBackend to navigate into the app directory
+
+2. npm init -y  // to initialte backend file 
+
+3. node app.js to run the server
+
+
+###
+provided all testing cases in the app.http 
+
+
+

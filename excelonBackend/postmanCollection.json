@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "997bcafe-d402-450b-9400-9fd22dd4b57b",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37300014"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://excelon-circuits-1.onrender.com/cityname",
+					"protocol": "https",
+					"host": [
+						"excelon-circuits-1",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"cityname"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://excelon-circuits-1.onrender.com/cityname",
+					"protocol": "https",
+					"host": [
+						"excelon-circuits-1",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"cityname"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"population\"  :95455000, \r\n    \"country\" : \"India\", \r\n    \"latitude\" : 175.687, \r\n    \"longitude\" : 789.23\r\n\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://excelon-circuits-1.onrender.com/cityname/Delhi",
+					"protocol": "https",
+					"host": [
+						"excelon-circuits-1",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"cityname",
+						"Delhi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"name\": \"Mangalore\",\r\n    \"population\": 494000,\r\n    \"country\": \"India\",\r\n    \"latitude\": 67.3618,\r\n    \"longitude\": 49.4747\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://excelon-circuits-1.onrender.com/cityname",
+					"protocol": "https",
+					"host": [
+						"excelon-circuits-1",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"cityname"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://excelon-circuits-1.onrender.com/cityname/Bidar",
+					"protocol": "https",
+					"host": [
+						"excelon-circuits-1",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"cityname",
+						"Bidar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Querry result",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://excelon-circuits-1.onrender.com/cityname?search=Gulbarga&country=India&projection=name,population,country",
+					"protocol": "https",
+					"host": [
+						"excelon-circuits-1",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"cityname"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "Gulbarga"
+						},
+						{
+							"key": "country",
+							"value": "India"
+						},
+						{
+							"key": "projection",
+							"value": "name,population,country"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
