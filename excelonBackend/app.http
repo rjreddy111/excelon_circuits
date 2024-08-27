@@ -1,0 +1,42 @@
+//uploading city
+POST http://localhost:5001/cityname 
+Content-Type: application/json
+
+ {
+    "name": "Lucknow",
+    "population": 1494000,
+    "country": "India",
+    "latitude": 67.3618,
+    "longitude": 49.4747
+}
+
+
+// getting city based on the querries
+### 
+GET http://localhost:5001/cityname
+
+
+### 
+GET http://localhost:5001/cityname?filter={"country":"India"}&page=1&limit=10
+
+### 
+GET http://localhost:5001/cityname?projection=name,population,country&search=My%20Citys&page=1&limit=10
+
+### 
+
+DELETE http://localhost:5001/cityname/null
+
+
+
+// update city
+### 
+PUT http://localhost:5001/cityname/My%20Citys
+Content-Type: application/json
+
+ {
+    "population"  :55000, 
+    "country" : "India", 
+    "latitude" : 175.687, 
+    "longitude" : 789.23
+
+ }
