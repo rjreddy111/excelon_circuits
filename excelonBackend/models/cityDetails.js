@@ -59,8 +59,8 @@ router.get("/", async (request, response) => {
         console.log(handleProjection)
 
         let searchCondition = ""
-        if (search) {
 
+        if (search) {
             searchCondition = `name like '%${search}%'`;
             filterCondition = filterCondition ? `${filterCondition} AND ${searchCondition}` : `WHERE ${searchCondition}`
             } 
@@ -74,22 +74,27 @@ router.get("/", async (request, response) => {
             
         
         const getTotatlCount = search ? 
-         `SELECT count(*) as totalCount FROM city WHERE name like '%{search}%' `
+         `SELECT count(*) as totalCount FROM city ${filterCondition} `
          : 
          `SELECT count(*) as totalCount FROM city `
 
          const totalCount = await request.app.locals.dbObject.get(getTotatlCount) 
-         totalPages = Math.floor(totalCount.totalCount/limit)
-         totalPages === 0 ? 1 : totalPages
-         console.log(totalPages)
+         console.log(totalCount)
+         totalPages = Math.ceil(totalCount.totalCount/limit) 
         
-        console.log(totalCount)
+        
+        
+
+       
+         
+       
+        
         response.json({
             data:cities , 
             page:parseInt(page), 
             limit :parseInt(limit), 
             totalCount, 
-            totalPages 
+            totalPages
 
         });
         

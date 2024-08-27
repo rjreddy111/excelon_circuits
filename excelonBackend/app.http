@@ -20,7 +20,7 @@ GET http://localhost:5001/cityname
 GET http://localhost:5001/cityname?filter={"country":"India"}&page=1&limit=10
 
 ### 
-GET http://localhost:5001/cityname?projection=name,population,country&search=My%20Citys&page=1&limit=10
+GET http://localhost:5001/cityname?projection=name,population,country&search=Delhi
 
 ### 
 
